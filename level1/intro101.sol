@@ -4,7 +4,7 @@ pragma solidity >=0.7.0 <0.8.0;
 
 contract myFirstContract {
 
-    // state variable and numeric operators
+    // state variable and integer types
     // state variables are permanently stored on the Ethereum blockchain
     
     // numeric types are int and unit
