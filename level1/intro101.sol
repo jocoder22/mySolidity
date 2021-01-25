@@ -19,7 +19,7 @@ contract myFirstContract {
     
     // struct, way to create complex data type
     
-    struct myAccount{
+    struct myAccount {
         string name;
         uint balance;
     }
@@ -27,8 +27,17 @@ contract myFirstContract {
     // Array, data collection
     // Public => other contracts will be able to read only
     // Public => solidity will automatically create a getter function
+    // myAccount[] is dynamic array while myAccount[9] is fixed length array
     
     myAccount[] public customerAccounts;
+    
+    // functions, where the actions happens!
+    // memory => passes arguments by reference e.g strings, structs, mappings, arrays
+    // no memory => passes arguments by value e.g int, uint
+    
+    function accountCreator(string memory _name, unit _amount) public {
+    
+    }
        
     
 
