@@ -11,7 +11,7 @@ contract my2ndContract {
         int balance;
     }
 
-    // pure function, don't access the data on the App
+    // pure function, don't access the data on the App, return depends on arguments only
     // private => only visible within this contract
     // returns => the type of return value
     
@@ -19,9 +19,9 @@ contract my2ndContract {
         return _amountA + _amountB;
     }
     
-    // view => for display only, does not change the state or database
+    // view => for display only, does not change/modify the state or database
     
-    funtion _seebalance(customerAccount _account) private view returns(string){
+    function _seebalance(customerAccount _account) private view returns(string){
         return _account.name;
     }
     
