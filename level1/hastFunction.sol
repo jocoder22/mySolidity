@@ -11,10 +11,9 @@ contract my3rdContract {
     
     uint betta = 9050;
     
-    function _randGenerator(string memory _str) private view returns(int) {
+    function _randGenerator(string memory _str) private view returns(uint) {
         uint randnumber = uint(keccak256(abi.encodePacked(_str)));
         return randnumber % betta;
-      
     }
     
     
