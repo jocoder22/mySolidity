@@ -8,5 +8,8 @@ contract my5thContract {
     }
     
     // Address is the account identifier for Ethereum users
+    mapping(address => unit) private customerbalance;
+    
     // mapping is key-value method for data storage and look-up
+    mapping(unit => string) customerIdmapcustomerName;
 }
