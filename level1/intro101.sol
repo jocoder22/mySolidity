@@ -51,7 +51,5 @@ contract myFirstContract {
     function _privateAccountCreator(string memory _name, unit _amount, string _privateKey) private {
         privateCustomers.push(privateAccounts(_name, _amount, _privateKey));
     }
-    
-    
-       
+         
 }
