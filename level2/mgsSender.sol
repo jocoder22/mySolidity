@@ -18,7 +18,10 @@ contract my6thContract {
         // store the _amount under the calling address
         cytoBalance[msg.sender] = _amount
         
+        // increase the _amount under the calling address by 1
+        cytoBalance[msg.sender]++;
         
+        // return or retrieve the amount store for the caller
         return cytoBalance[msg.sender];
         
     }
