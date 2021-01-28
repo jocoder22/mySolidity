@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.8.0;
 
-contract my6thContractUpdate {
+contract my6thContract {
 
    // require will throw an error and stop the function if
    // the condition is false
