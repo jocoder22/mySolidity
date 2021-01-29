@@ -26,5 +26,4 @@ contract my6thContract {
         
     }
 
-
 }
