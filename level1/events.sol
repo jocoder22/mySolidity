@@ -11,7 +11,7 @@ contract my4thContract {
 
     struct customerAccount {
         string name;
-        int balance;
+        uint balance;
     }
     
     // create a struct customerAccount array i.e a collection
@@ -22,11 +22,13 @@ contract my4thContract {
         // the push method returns the current length of the collection, it's zero based
         // after adding(pushing) to the array
         
-        uint newAccount = Accounts.push(customerAccount(_name, _amount)) - 1;
+        customerAccount memory newCustomer = customerAccount(_name, _amount);
+        uint acctNumber = Accounts.push(newCustomer);
+        // uint newAccount = Accounts.push(customerAccount(_name, _amount)) - 1;
         
         // emit will authomatically activate the event
         
-        emit newAccountCreated(_name, _amount, newAccount);
+        emit newAccountCreated(_name, _amount, acctNumber);
     }
     
     
