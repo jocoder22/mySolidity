@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.8.0;
 
 contract my4thContract {
@@ -21,11 +22,11 @@ contract my4thContract {
         // the push method returns the current length of the collection, it's zero based
         // after adding(pushing) to the array
         
-        uint accNumber = Accounts.push(customerAccount(_name, _amount)) - 1;
+        uint newAccount = Accounts.push(customerAccount(_name, _amount)) - 1;
         
         // emit will authomatically activate the event
         
-        emit newAccountCreated(_name, _amount, accNumber);
+        emit newAccountCreated(_name, _amount, newAccount);
     }
     
     
