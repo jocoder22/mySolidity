@@ -6,7 +6,7 @@ contract my4thContract {
   // events are way to communicate something that occured on the blockchain
   // to the Apps front-end, showing that something happened to the blockchain
   
-  event newAccountCreated(string name, uint amount, unit AccountNumber);
+  event newAccountCreated(string name, uint amount, uint AccountNumber);
 
     struct customerAccount {
         string name;
