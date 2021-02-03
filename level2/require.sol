@@ -12,7 +12,7 @@ contract my6thContract {
     // msg.sender is the address of person or smart contract
     // that calls a function in a particular smart contract
     
-    function _showOwner(unit _id, uint _amount) private view returns (string memory) {
+    function _showOwner(uint _id, uint _amount) private view returns (string memory) {
         // condition must be true for the function to run
         // here the cytobalance of the caller must be at least 30
         require(cytoBalance[msg.sender] >= 30);
