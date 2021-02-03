@@ -27,7 +27,6 @@ contract my4thContract {
         // uint newAccount = Accounts.push(customerAccount(_name, _amount)) - 1;
         
         // emit will authomatically activate the event
-        
         emit newAccountCreated(_name, _amount, acctNumber);
     }
     
