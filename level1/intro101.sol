@@ -42,13 +42,13 @@ contract myFirstContract {
     // memory => passes arguments by reference e.g strings, structs, mappings, arrays
     // no memory => passes arguments by value e.g int, uint
     
-    function accountCreator(string memory _name, unit _amount) public {
+    function accountCreator(string memory _name, uint _amount) public {
         // Accounts memory myAccount = Accounts(_name, _amount);
         customerAccounts.push(Accounts(_name, _amount));
     }
     
     // private => only visible within this contract
-    function _privateAccountCreator(string memory _name, unit _amount, string _privateKey) private {
+    function _privateAccountCreator(string memory _name, uint _amount, string storage _privateKey) private {
         privateCustomers.push(privateAccounts(_name, _amount, _privateKey));
     }
          
