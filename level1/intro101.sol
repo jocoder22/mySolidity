@@ -14,8 +14,8 @@ contract myFirstContract {
     // others are uint8, uint16, uint36
     
     uint firstMoney = 160000000;
-    unit charges = 100;
-    unit totalAmount = firstMoney - charges;
+    uint charges = 100;
+    uint totalAmount = firstMoney - charges;
     
     // struct, way to create complex data type
     
