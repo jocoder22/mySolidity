@@ -23,7 +23,8 @@ contract my4thContract {
         // after adding(pushing) to the array
         
         customerAccount memory newCustomer = customerAccount(_name, _amount);
-        uint acctNumber = Accounts.push(newCustomer);
+        // uint acctNumber = Accounts.push(newCustomer);
+        Accounts.push(newCustomer);
         // uint newAccount = Accounts.push(customerAccount(_name, _amount)) - 1;
         
         // emit will authomatically activate the event
