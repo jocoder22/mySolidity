@@ -9,7 +9,7 @@ contract my4thContract {
   
   event newAccountCreated(string name, uint amount, uint AccountNumber);
 
-    struct customerAccount {
+  struct customerAccount {
         string name;
         uint balance;
     }
