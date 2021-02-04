@@ -7,7 +7,6 @@ contract my6thContract_son is my6thContract {
 
     uint monthlypay = 1000;
 
-
     if(mgs.sender == owner){
         withdaraw(monthlypay);
     }
