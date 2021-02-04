@@ -18,7 +18,6 @@ contract my4thContract {
     customerAccount[] private Accounts;
     
     function _createAccount(string memory _name, uint _amount) private {
-    
         // the push method returns the current length of the collection, it's zero based
         // after adding(pushing) to the array
         
