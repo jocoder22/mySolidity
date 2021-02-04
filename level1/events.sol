@@ -23,12 +23,12 @@ contract my4thContract {
         
         customerAccount memory newCustomer = customerAccount(_name, _amount);
         // uint acctNumber = Accounts.push(newCustomer);
-        Accounts.push(newCustomer);
-        uint newAccount = Accounts.push(newCustomer) - 1;
+        uint newAccount;
+        // Accounts.push(newCustomer);
+        newAccount = Accounts.push(newCustomer) - 1;
         
         // emit will authomatically activate the event
         emit newAccountCreated(_name, _amount, newAccount);
     }
-    
     
  }
