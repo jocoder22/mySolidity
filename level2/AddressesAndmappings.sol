@@ -9,10 +9,10 @@ contract my5thContract {
     }
     
     // Address is the account identifier for Ethereum users
-    // key: address, value: uint
+    // key tpye: address, value type: uint
     mapping(address => uint) private customerbalance;
     
     // mapping is key-value method for data storage and look-up
-    // key: uint, value: string
+    // key type: uint, value type: string
     mapping(uint => string) customerIdmapcustomerName;
 }
