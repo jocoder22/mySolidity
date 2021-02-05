@@ -30,6 +30,4 @@ contract my6thContract {
         return cytoBalance[msg.sender];
         
     }
-
-
 }
